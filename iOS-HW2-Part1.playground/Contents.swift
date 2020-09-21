@@ -30,6 +30,27 @@ import UIKit
  #
  اكثر من 40 -> سمنة مفرطه
 */
+var height = 1.6
+var weight = 49.9
+var BMI = height * weight
+
+func calculateBMI(a: Double, b: Double) -> String {
+    if BMI < 18.5 {
+        print ("thin")
+    }
+    else if BMI == 18.5-30.0 {
+        print ("normal")
+    }
+    else if BMI == 30.1-40.0 {
+        print ("fat")
+    }
+    else {
+           return "fat"
+    }
+}
+
+
+
 
 
 
